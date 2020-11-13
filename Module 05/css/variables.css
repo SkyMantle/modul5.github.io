@@ -1,0 +1,15 @@
+:root {
+	/* имя переменной, для использования функция var() */
+	--main-font-color: #181717;
+	--main-title-color: #db5d09e3;
+	
+	/* переманная для шрифтов */
+	--main-font-stack: Ubuntu, sans-serif;
+	--second-font-stack: Roboto, sans-serif;
+
+	/* переменная для размера шрифтов */
+	--default-font-size: 16px;
+	--default-line-hight:1.5;
+
+
+}

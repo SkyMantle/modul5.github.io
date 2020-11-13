@@ -1,0 +1,337 @@
+body {
+	min-height: 100vh;
+	background-color: #ffffff;;
+	}
+
+.wrapper {
+	width: 1600px;
+	margin: auto;
+	padding: 10px;
+	
+	
+}	
+
+.header {
+	width: 1550px;
+	text-align: center;
+	align-items: center;
+}
+
+.logo {
+	width: 255px;
+	height: 73px;
+	color: #555252;
+	font-family: Roboto;
+	text-transform: uppercase;
+	font-family: "Roboto Light";
+	font-weight: 300;
+	letter-spacing: -0.6px;
+	display: inline-block;
+	margin: 38px 0px 0px 0px;
+	
+	
+}
+	
+	.logo::first-letter  {
+	color: #0fb694;
+	font-family: "Roboto - Black";
+	letter-spacing: -0.6px;
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 32px;
+	
+	}
+	.menu {
+		float: right;
+		margin: 43px 245px 0 200px;
+		color:#0f0101;
+	}
+	
+	.menu a {
+	font-family: "Myriad Pro";
+	font-size: 18px;
+	letter-spacing: -0.36px;
+	color:#0f0101;
+	text-decoration: none;
+	padding-left: 20px;
+	}
+	
+	.menu a:nth-child(1) {
+	
+	font-family: "Open Sans";
+	font-size: 18px;
+	line-height: 11px;
+	text-transform: uppercase;
+	color: #1abc9c;
+	font-weight: 700;
+	letter-spacing: -0.28px;
+	}
+	
+	
+
+.carousel{
+	width: 1600px;
+	position: relative;
+	height: 600px;
+	
+}
+
+
+.slick-arrow {
+	position: absolute;
+	z-index: 10;
+	background: #ffffff;
+	height: 104px;
+	width: 104px;
+	cursor: pointer;
+	border: 0;
+	font-size: 0;
+
+}
+
+
+.slick-next {
+	top: 230px;
+	right: 244px;
+	background-color: #1abc9c;
+	
+}
+
+.slick-prev {
+	top: 225px;
+	left: 245px;
+	background-color: #4ec6ab;	
+}
+
+.slick-prev::before {
+    content: "\2b05";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.slick-next::after {
+    content: "\2b05";
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(-1, 1);
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.carousel img {
+	width: 1600px;
+	height: 600px;
+	object-fit: cover;
+}
+
+.main-container {
+	width: 1600px;
+	text-align: center;
+	align-items: center;
+	background-color: #e9f0fd;;
+}
+
+
+.main-title h1 {
+	font-family: var(--second-font-stack);
+	font-size: 48px;
+	line-height: 32px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+	color: #515151;
+	padding: 101px 605px 0 605px;
+}
+
+.main-title h1::after {
+	content: '';
+	width: 164px;
+	height: 7px;
+	display: block;
+	background-color: #1abc9c;
+	margin: 32px 110px 0 108px;
+	
+
+}
+
+.gallery {
+	margin: 80px 244px 0 245px;
+	padding: 20px 20px;
+}
+
+.gallery li {
+	float: left;
+	width: 22%;
+	margin-right: 30px;
+	margin-bottom: 100px;
+} 
+
+.clearfix {
+	display: table;
+	content: '';
+	clear: both;
+}
+.card {
+	position: relative;
+	overflow: hidden;
+}
+
+
+
+.card-container:hover {
+	transform: scale(1.1);
+	background: #757575;
+}
+
+.card img {
+	width: 100%;
+	display: block;
+	height: 322px;
+	object-fit: cover;
+	padding-right: 30px;
+	background-color: #ffffff;
+}
+
+.card-title {
+	background-color: #323232;
+	height: 40px;
+	padding: 5px 81px 0 0;
+}
+
+.card-title:nth-child(n+1){
+	font-family: Roboto;
+	font-size: 18px;
+	line-height: 32px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+	color: #ffffff;
+}
+
+.price {
+	float: right;
+	font-family: var(--second-font-stack);
+	widows: 54px;
+	height: 40px;
+	background-color: #8a8a8a;
+	text-align: center;
+	color: #ffffff;
+	margin-top: -40px;
+	padding: 12px 12px;
+	}
+
+
+.card-title:hover {
+	background:  #0fb694;
+}
+.price:hover {
+	background:  #5de2c8;
+}
+
+
+.card-button {
+	width: 100%;
+	height: 89%;
+	background: rgba(37, 37, 37, 0.692);
+	/* background: rgba(0, 0, 0, .8); */
+	opacity: 0;
+	transition: .3s ease-in-out;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	
+	
+	
+}
+.button-like {
+	border: 1px solid #e25615;
+	width: 50px;
+	height: 50px;
+	content: url('../img/icons/__1951.png') ;
+	position: absolute;
+	top: 89px;
+	left: 26%;
+	padding: 14px 14px;
+	transform: translate(-50%, -50%) scale(0);
+  	transition: .3s ease-in-out;
+}
+.button-compare {
+	border: 1px solid #e25615;
+	width: 50px;
+	height: 50px;
+	content: url('https://www.flaticon.com/svg/static/icons/svg/3225/3225224.svg');
+	position: absolute;
+	top: 89px;
+	left: 50%;
+	padding: 14px 14px;
+	transform: translate(-50%, -50%) scale(0);
+	transition: .3s ease-in-out;
+	
+}
+.button-wish {
+	border: 1px solid #e25615;
+	width: 50px;
+	height: 50px;
+	
+	content: url('../img/icons/__1964.png');
+	position: absolute;
+	top: 89px;
+	right: 5%;
+	padding: 14px 14px;
+	transform: translate(-50%, -50%) scale(0);
+  	transition: .3s ease-in-out;
+}
+.cart-button {
+	width: 164px;
+	height: 50px;
+	background-color: #323232;
+	border: 1px solid #e25615;
+	position: absolute;
+	content: url('https://www.flaticon.com/svg/static/icons/svg/872/872243.svg') ;
+	top: 146px;
+	left: 50%;
+	padding: 14px 14px;
+	object-fit: contain;
+	transform: translate(-50%, -50%) scale(0);
+	transition: .3s ease-in-out;
+	
+}
+
+
+
+.card:hover .card-button {opacity: 1;}
+.card:hover .button-like {transform: translate(-50%, -50%) scale(1);}
+.card:hover .button-compare {transform: translate(-50%, -50%) scale(1);}
+.card:hover .button-wish {transform: translate(-50%, -50%) scale(1);}
+.card:hover .cart-button {transform: translate(-50%, -50%) scale(1);}
+
+
+.footer {
+	width: 1600px;
+	height: 88px;
+	background-color: #323232;
+	text-align: center;
+	align-items: center;
+
+}
+
+.footer p {
+	font-family: OpenSans;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	letter-spacing: -0.02em;
+	color: #fefefe;
+	padding: 30px 0px;
+}
+
+.style {
+	color: #46bfa9;
+}
